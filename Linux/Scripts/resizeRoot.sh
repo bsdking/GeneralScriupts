@@ -6,7 +6,7 @@ PHYSICAL_DEVICE="/dev/vda4"
 # NOTE: Replace 'volume-group-name-root' with your actual logical volume name (check with df -h or lvdisplay)
 LOGICAL_VOLUME_PATH="/dev/mapper/systemVG-LVRoot" 
 
-echo "Install cloud-utils"
+echo "Install cloud-utils..."
 dnf -y install cloud-utils
 
 echo "Resizing physical partition..."
